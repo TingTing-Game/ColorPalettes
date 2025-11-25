@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TingTing Game Studio</title>
+    <title>Casual Game Color Palette</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
             color: #333;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
         main {
+            flex: 1;
             padding: 20px;
             max-width: 800px;
             margin: auto;
@@ -29,78 +26,40 @@
         h2 {
             color: #4CAF50;
         }
-        .screenshot {
-            width: 100%;
-            height: auto;
+        .color-palette {
+            display: flex;
+            white-space: nowrap; /* Ensure colors stay in a single line */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+        }
+        .color-box {
+            width: 150px;
+            height: 80px;
+            margin: 10px;
             border-radius: 5px;
-            margin: 20px 0;
-        }
-        form {
-            margin: 20px 0;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #4CAF50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #4CAF50;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            font-weight: bold;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>TingTing Game</h1>
-    <p>Bringing Fun Puzzle Games to Life!</p>
-</header>
-
 <main>
-    <h2>About Us</h2>
-    <p>We specialize in developing engaging puzzle games that challenge and entertain players of all ages. Our mission is to create memorable gaming experiences that ignite creativity and problem-solving skills.</p>
-
-    <h2>Our Games</h2>
-    <ul>
-        <li><strong>Puzzle Quest</strong>: Embark on an exciting journey filled with brain-teasing puzzles!</li>
-        <li><strong>Color Connection</strong>: Connect colorful dots to solve challenging levels!</li>
-        <li><strong>Escape Room</strong>: Work your way through a series of intricate puzzles to escape!</li>
-    </ul>
-
-    <!--h2>Screenshots</h2>
-    <img src="screenshot1.jpg" alt="Puzzle Quest Screenshot" class="screenshot">
-    <img src="screenshot2.jpg" alt="Color Connection Screenshot" class="screenshot"-->
-
-    <h2>Contact Us</h2>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+    <h2>Casual Game Color Palette</h2>
+    <div class="color-palette">
+        <div class="color-box" style="background-color: #FF6F61;">#FF6F61</div>
+        <div class="color-box" style="background-color: #6FA3EF;">#6FA3EF</div>
+        <div class="color-box" style="background-color: #8CCB3D;">#8CCB3D</div>
+        <div class="color-box" style="background-color: #FFD700;">#FFD700</div>
+        <div class="color-box" style="background-color: #FFB6C1;">#FFB6C1</div>
+        <div class="color-box" style="background-color: #FF8C00;">#FF8C00</div>
+        <div class="color-box" style="background-color: #9370DB;">#9370DB</div>
+        <div class="color-box" style="background-color: #3CB371;">#3CB371</div>
+    </div>
 </main>
-
-<footer>
-    <p>&copy; 2023 TingTing Game. All rights reserved.</p>
-</footer>
 
 </body>
 </html>
