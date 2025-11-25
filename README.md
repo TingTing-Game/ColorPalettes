@@ -1,1 +1,1 @@
-Fun and entertaining games.
+Color palettes commonly used in casual games.
